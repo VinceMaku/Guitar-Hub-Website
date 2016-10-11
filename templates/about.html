@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="header-wrap">
+</div>
+
+<div class="menu-wrap">
+	<div class="menu">
+		<ul>
+          <li><a href="{% url 'html_tmplt:index' %}" >Home</a></li>
+            <li><a href="{% url 'html_tmplt:about' %}" class="active">About</a></li>
+            <li><a href="{% url 'html_tmplt:acoustic' %}" >Acoustic</a></li>
+      <li><a href="{% url 'html_tmplt:electric' %}" >Electric</a></li>
+      <li><a href="{% url 'html_tmplt:guitartuner' %}" >Tuner</a></li>
+        </ul>
+    </div>
+    
+    <div class="socia-wrap">
+	<div class="socail">
+		<ul>
+          <li><a href="https://web.facebook.com/hubguitar?_rdr"><img src="{% static 'images/facebook.png' %}" alt="" /></a></li>
+            <li><a href="https://twitter.com/hubguitar"><img src='{% static "images/twitter.png" %}' alt="" /></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div class="page-wrap">
+<div class="wrap3">  
+  <div class=" leftcol">
+  <div class="panel">
+  	<div class="title" align="center">
+  		<h1>About </h1>
+    </div>
+  	<div class="content">
+<p align="center">Guitar Hub is a collection of different types of guitar from the top guitar brands in the world.</p>
+<p align="center">Gibson. Taylor. Fender. </p>
+<p align="center">Guitar Hubs’s goal is to give you the True Historic guitar models from those different brands.</p>
+<p align="center">We hope you find Guitar Hub useful, inspiring and informative.</p>
+<p align="center">And if you do, we urge you to support us by sharing this site with your friends or following us on Facebook or Twitter.</p>
+<br>
+<p align="center">We’re counting on you to get the word out about Guitar Hub.</p>
+    </div>
+  </div>	
+  </div>
+ {% endblock content %}
+ {% block footer %} 
+    <div class="portfolio-content">
+	<div class="gtf"></div>
+ 
+    
+  <div class="clearing"></div>
+</div>    
+</div>
+<div class="footer-wrap">
+  <div class="wrap">
+    <div class="panel">
+      <div class="title">
+        <h1>Contact us </h1>
+      </div>
+      <div class="cotact">
+        <ul>         
+         <li><img src='{% static "images/icon6.png" %}' alt="" />(000) 888 888888</li>
+          <li><img src='{% static "images/icon8.png" %}' alt="" />Austin Clyde Gueta</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearing"></div>
+  </div>
+</div>
+
+{% endblock footer %}

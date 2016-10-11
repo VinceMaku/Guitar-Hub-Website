@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="header-wrap">
+</div>
+<div class="menu-wrap">
+  <div class="menu">
+    <ul>
+          <li><a href="{% url 'html_tmplt:index' %}" >Home</a></li>
+            <li><a href="{% url 'html_tmplt:about' %}" >About</a></li>
+            <li><a href="{% url 'html_tmplt:acoustic' %}" class="active">Acoustic</a></li>
+      <li><a href="{% url 'html_tmplt:electric' %}" >Electric</a></li>
+      <li><a href="{% url 'html_tmplt:guitartuner' %}" >Tuner</a></li>
+    </ul>
+  </div>
+  <div class="socia-wrap">
+    <div class="socail">
+      <ul>
+          <li><a href="https://web.facebook.com/hubguitar?_rdr"><img src="{% static 'images/facebook.png' %}" alt="" /></a></li>
+            <li><a href="https://twitter.com/hubguitar"><img src='{% static "images/twitter.png" %}' alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="page-wrapper">
+  <div class="portfolio-content">
+<div class="acoustic"></div>
+    <ul class="portfolio-categ filter">
+      <li class="all active"><a href="#">All</a></li>
+
+      <li class="gibson"><a href="#" >Gibson</a></li>
+	  <li class="taylor"><a href="#" >Taylor</a></li>
+	  <li class="fender"><a href="#" >Fender</a></li>
+    
+    </ul>
+    <ul class="portfolio-area">
+
+      <li class="portfolio-item2" data-id="id-0" data-type="fender">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic1.jpg" %}' rel="prettyPhoto[gallery]" title="CD-320ASRWCE"><img width="190" height="130" src='{% static "images/thumbs/p1.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">CD-320ASRWCE</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-1" data-type="fender">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic2.jpg" %}' rel="prettyPhoto[gallery]" title="CF-60 FOLK"><img width="190" height="130" src='{% static "images/thumbs/p2.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">CF-60 FOLK</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-2" data-type="fender">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic3.jpg" %}' rel="prettyPhoto[gallery]" title="CJ-290SCE JUMBO"><img width="190" height="130" src='{% static "images/thumbs/p3.jpg" %}'> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">CJ-290SCE JUMBO</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-3" data-type="fender">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic4.jpg" %}' rel="prettyPhoto[gallery]" title="CP-100 PARLOR "><img width="190" height="130" src='{% static "images/thumbs/p4.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">CP-100 PARLOR </a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-4" data-type="gibson">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic5.jpg" %}' rel="prettyPhoto[gallery]" title="1942 J-45 Legend"><img width="190" height="130" src='{% static "images/thumbs/p5.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">1942 J-45 Legend</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-5" data-type="gibson">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic6.jpg" %}' rel="prettyPhoto[gallery]" title="Flight Mystic Rosewood"><img width="190" height="130" src='{% static "images/thumbs/p6.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">Flight Mystic Rosewood</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-6" data-type="gibson">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic7.jpg" %}' rel="prettyPhoto[gallery]" title="HP 835 Supreme"><img width="190" height="130" src='{% static "images/thumbs/p7.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">HP 835 Supreme</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-7" data-type="gibson">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic8.jpg" %}' rel="prettyPhoto[gallery]" title="LG-2 American Eagle"><img width="190" height="130" src='{% static "images/thumbs/p8.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">LG-2 American Eagle</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-8" data-type="gibson">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic9.jpg" %}' rel="prettyPhoto[gallery]" title="SJ-200 Vintage"><img width="190" height="130" src='{% static "images/thumbs/p9.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">SJ-200 Vintage</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-9" data-type="taylor">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic10.jpg" %}' rel="prettyPhoto[gallery]" title="110ce"><img width="190" height="130" src='{% static "images/thumbs/p10.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">110ce</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-10" data-type="taylor">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic11.jpg" %}' rel="prettyPhoto[gallery]" title="214ce-SB DLX"><img width="190" height="130" src='{% static "images/thumbs/p11.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">214ce-SB DLX</a></h2>
+          </div>
+        </div>
+      </li>
+      <li class="portfolio-item2" data-id="id-11" data-type="taylor">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic12.jpg" %}' rel="prettyPhoto[gallery]" title="814ce"><img width="190" height="130" src='{% static "images/thumbs/p12.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">814ce</a></h2>
+          </div>
+        </div>
+      </li>
+	    <li class="portfolio-item2" data-id="id-11" data-type="taylor">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic13.jpg" %}' rel="prettyPhoto[gallery]" title="GS Mini-e Koa"><img width="190" height="130" src='{% static "images/thumbs/p10.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">GS Mini-e Koa</a></h2>
+          </div>
+        </div>
+      </li>
+	    <li class="portfolio-item2" data-id="id-11" data-type="taylor">
+        <div> <span class="image-block"> <a class="image-zoom" href='{%static "images/big/pic14.jpg" %}' rel="prettyPhoto[gallery]" title="GS Mini-e RW"><img width="190" height="130" src='{% static "images/thumbs/p14.jpg" %}'/> </a> </span>
+          <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark">GS Mini-e RW</a></h2>
+          </div>
+        </div>
+      </li>
+      <div class="column-clear"></div>
+    </ul>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="header-wrap">
+</div>
+
+<div class="menu-wrap">
+	<div class="menu">
+		<ul>
+        	<li><a href="{% url 'html_tmplt:index' %}" class="active">Home</a></li>
+            <li><a href="{% url 'html_tmplt:about' %}" >About</a></li>
+            <li><a href="{% url 'html_tmplt:acoustic' %}" >Acoustic</a></li>
+			<li><a href="{% url 'html_tmplt:electric' %}" >Electric</a></li>
+			<li><a href="{% url 'html_tmplt:guitartuner' %}" >Tuner</a></li>
+			
+        </ul>
+    </div>
+    
+    <div class="socia-wrap">
+	<div class="socail">
+		<ul>
+        	<li><a href="https://web.facebook.com/hubguitar?_rdr"><img src="{% static 'images/facebook.png' %}" alt="" /></a></li>
+            <li><a href="https://twitter.com/hubguitar"><img src='{% static "images/twitter.png" %}' alt="" /></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src='{%static "images/11.png" %}' style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src='{%static "images/22.png" %}' style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src='{%static "images/33.png" %}' style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+{% endblock content %}
+{% block footer %}
+<div class="portfolio-content">
+	<div class="gtf"></div>
+<div class="footer-wrap">
+  <div class="wrap">
+
+    <div class="panel">
+      <div class="title">
+        <h1>Contact us </h1>
+      </div>
+      <div class="cotact">
+        <ul>
+          <li><img src='{% static "images/icon6.png" %}' alt="" />(000) 888 888888</li>
+          <li><img src='{% static "images/icon8.png" %}' alt="" />Austin Clyde Gueta</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearing"></div>
+  </div>
+</div>
+
+{% endblock footer %}
